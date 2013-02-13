@@ -1,5 +1,5 @@
 Name:           korora-bookmarks
-Version:        17
+Version:        18
 Release:        0.1
 Summary:        Korora bookmarks
 Group:          Applications/Internet
@@ -13,12 +13,14 @@ BuildArch:      noarch
 Provides:       system-bookmarks
 Obsoletes:      fedora-bookmarks
 Provides:       fedora-bookmarks
+Obsoletes:      kororaa-bookmarks
+Provides:       kororaa-bookmarks
 
 %description
 This package contains the default bookmarks for Korora.
 
 %prep
-%setup -q
+# We are nihilists, Lebowski.  We believe in nassing.
 
 %build
 # We are nihilists, Lebowski.  We believe in nassing.
@@ -39,6 +41,9 @@ install -p -m 644 default-bookmarks.html $RPM_BUILD_ROOT%{_datadir}/bookmarks
 %{_datadir}/bookmarks/default-bookmarks.html
 
 %changelog
+* Wed Feb 13 2013 Chris Smart <csmart@kororaproject.org> 18.0.1
+- Updated build for Kororaa 18.
+
 * Mon May 21 2012 Chris Smart <chris@kororaa.org> 17.0.1
 - Updated build for Kororaa 17.
 
