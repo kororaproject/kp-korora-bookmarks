@@ -20,7 +20,7 @@ Provides:       kororaa-bookmarks
 This package contains the default bookmarks for Korora.
 
 %prep
-# We are nihilists, Lebowski.  We believe in nassing.
+%setup -q
 
 %build
 # We are nihilists, Lebowski.  We believe in nassing.
