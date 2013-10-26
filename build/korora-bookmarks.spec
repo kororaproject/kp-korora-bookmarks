@@ -1,5 +1,5 @@
 Name:           korora-bookmarks
-Version:        18
+Version:        20
 Release:        0.1
 Summary:        Korora bookmarks
 Group:          Applications/Internet
@@ -30,7 +30,6 @@ This package contains the default bookmarks for Korora.
 %{__mkdir_p} $RPM_BUILD_ROOT%{_datadir}/bookmarks
 install -p -m 644 default-bookmarks.html $RPM_BUILD_ROOT%{_datadir}/bookmarks
 
-
 %clean
 %{__rm} -rf $RPM_BUILD_ROOT
 
@@ -41,6 +40,9 @@ install -p -m 644 default-bookmarks.html $RPM_BUILD_ROOT%{_datadir}/bookmarks
 %{_datadir}/bookmarks/default-bookmarks.html
 
 %changelog
+* Sat Oct 26 2013 Chris Smart <csmart@kororaproject.org> 20.0.1
+- Updated build for Korora 20.
+
 * Wed Feb 13 2013 Chris Smart <csmart@kororaproject.org> 18.0.1
 - Updated build for Kororaa 18.
 
